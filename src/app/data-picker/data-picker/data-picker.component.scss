@@ -1,0 +1,85 @@
+@function r($px) {
+  @return ($px / 16) * 1rem
+}
+
+$pickerHeight: 160;
+$middleLayerHeight: 32;
+
+.ng-data-picker {
+  height: r($pickerHeight);
+  position: relative;
+  background-color: transparent;
+  overflow: hidden;
+  &.black {
+    color: white;
+  }
+  .picker-group {
+
+  }
+  .picker-list {
+    height: r(100);
+    position: relative;
+    top: r($pickerHeight / 2 - $middleLayerHeight / 2); // half of picker height - half of item height
+  }
+  .picker-item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    width: 100%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: block;
+    text-align: center;
+    will-change: transform;
+    contain: strict;
+    height: r($middleLayerHeight);
+    line-height: 2;
+    font-size: 1rem;
+  }
+  .selected-item {
+
+  }
+  .picker-handle-layer {
+    position: absolute;
+    width: 100%;
+    height: calc(100% + 2px);
+    left: 0;
+    right: 0;
+    top: -1px;
+    bottom: -1px;
+
+    .picker-top {
+      border-bottom: 0.55px solid #4a4959;
+      // background: linear-gradient(to bottom, black 1%, rgba(0, 0, 0, 0.01) 100%);
+      // transform: translate3d(0, 0, 5.625rem);
+    }
+    .picker-middle {
+      height: r($middleLayerHeight);
+    }
+    .picker-bottom {
+      border-top: 0.55px solid #4a4959;
+      // background: linear-gradient(to top, black 1%, rgba(0, 0, 0, 0.01) 100%);
+      // transform: translate3d(0, 0, 5.625rem);
+    }
+  }
+
+  /* flex system */
+  .flex-box {
+    display: flex;
+
+    $props: column row;
+    @each $prop in $props {
+      &.dir-#{$prop} {
+        flex-direction: $prop;
+      }
+    }
+
+    /* for items */
+    @for $n from 1 to 12 {
+      .weight-#{$n} {
+        flex: $n;
+      }
+    }
+  }
+}
