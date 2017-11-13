@@ -7,8 +7,146 @@ import { PickerData } from './data-picker.models'
 
 @Component({
   selector: 'ng-data-picker',
-  templateUrl: './data-picker.component.html',
-  styleUrls: ['./data-picker.component.scss']
+  // templateUrl: './data-picker.component.html',
+  template: `
+    <div class="ng-data-picker flex-box" [ngClass]="theme">
+
+      <!-- picker-group-layer -->
+      <div #pickerGroupLayer *ngFor="let group of data; let gIndex = index"
+        class="picker-group" [ngClass]="getGroupClass(gIndex)">
+
+        <div class="picker-list">
+          <div *ngIf="group.divider else ngIfElse"
+            class="picker-item divider" [ngClass]="getItemClass(gIndex, iIndex, true)">
+            {{ group.text }}
+          </div>
+
+          <div #ngIfElse *ngFor="let item of group.list; let iIndex = index"
+            class="picker-item" [ngClass]="getItemClass(gIndex, iIndex)" [ngStyle]="getItemStyle(gIndex, iIndex)">
+            {{ item.value || item }}
+          </div>
+        </div>
+
+      </div>
+
+      <div #pickerHandleLayer class="picker-handle-layer flex-box dir-column">
+        <div data-type="top" class="picker-top weight-1"></div>
+        <div data-type="middle" class="picker-middle"></div>
+        <div data-type="bottom" class="picker-bottom weight-1"></div>
+      </div>
+
+    </div>
+  `,
+  // styleUrls: ['./data-picker.component.scss']
+  styles: [`
+    .ng-data-picker {
+      height: 10rem;
+      position: relative;
+      background-color: transparent;
+      overflow: hidden;
+    }
+    .ng-data-picker.black {
+      color: white;
+    }
+    .ng-data-picker .picker-group {
+    }
+    .ng-data-picker .picker-list {
+      height: 6.25rem;
+      position: relative;
+      top: 4rem; // half of picker height - half of item height
+    }
+    .ng-data-picker .picker-item {
+      position: absolute;
+      top: 0;
+      left: 0;
+      overflow: hidden;
+      width: 100%;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      display: block;
+      text-align: center;
+      will-change: transform;
+      contain: strict;
+      height: 2rem;
+      line-height: 2;
+      font-size: 1rem;
+    }
+    .ng-data-picker .selected-item {
+    }
+
+    /* picker handle layer */
+    .ng-data-picker .picker-handle-layer {
+      position: absolute;
+      width: 100%;
+      height: calc(100% + 2px);
+      left: 0;
+      right: 0;
+      top: -1px;
+      bottom: -1px;
+    }
+    .ng-data-picker .picker-handle-layer .picker-top {
+      border-bottom: 0.55px solid rgba(74, 73, 89, 0.5);
+      // background: linear-gradient(to bottom, black 1%, rgba(0, 0, 0, 0.01) 100%);
+      // transform: translate3d(0, 0, 5.625rem);
+    }
+    .ng-data-picker .picker-handle-layer .picker-middle {
+      height: 2rem;
+    }
+    .ng-data-picker .picker-handle-layer .picker-bottom {
+      border-top: 0.55px solid rgba(74, 73, 89, 0.5);
+      // background: linear-gradient(to top, black 1%, rgba(0, 0, 0, 0.01) 100%);
+      // transform: translate3d(0, 0, 5.625rem);
+    }
+
+    /* flex system */
+    .ng-data-picker .flex-box {
+        display: flex;
+    }
+    .ng-data-picker .flex-box.dir-column {
+      flex-direction: column;
+    }
+    .ng-data-picker .flex-box.dir-row {
+      flex-direction: row;
+    }
+
+    /* flex system - for items */
+    .ng-data-picker .flex-box .weight-1 {
+      flex: 1;
+    }
+    .ng-data-picker .flex-box .weight-2 {
+      flex: 2;
+    }
+    .ng-data-picker .flex-box .weight-3 {
+      flex: 3;
+    }
+    .ng-data-picker .flex-box .weight-4 {
+      flex: 4;
+    }
+    .ng-data-picker .flex-box .weight-5 {
+      flex: 5;
+    }
+    .ng-data-picker .flex-box .weight-6 {
+      flex: 6;
+    }
+    .ng-data-picker .flex-box .weight-7 {
+      flex: 7;
+    }
+    .ng-data-picker .flex-box .weight-8 {
+      flex: 8;
+    }
+    .ng-data-picker .flex-box .weight-9 {
+      flex: 9;
+    }
+    .ng-data-picker .flex-box .weight-10 {
+      flex: 10;
+    }
+    .ng-data-picker .flex-box .weight-11 {
+      flex: 11;
+    }
+    .ng-data-picker .flex-box .weight-12 {
+      flex: 12;
+    }
+  `]
 })
 export class DataPickerComponent implements OnInit, AfterViewInit {
   currentIndexList: number[]
