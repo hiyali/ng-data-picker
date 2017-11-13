@@ -1,7 +1,7 @@
 {
   "name": "ng-data-picker",
   "author": "Salam Hiyali",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A angular 4 data picker that like iOS native datetime picker",
   "license": "MIT",
   "main": "lib/data-picker/data-picker.component",
