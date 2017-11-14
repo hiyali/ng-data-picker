@@ -86,16 +86,16 @@ import { PickerData } from './data-picker.models'
     }
     .ng-data-picker .picker-handle-layer .picker-top {
       border-bottom: 0.55px solid rgba(74, 73, 89, 0.5);
-      // background: linear-gradient(to bottom, black 1%, rgba(0, 0, 0, 0.01) 100%);
-      // transform: translate3d(0, 0, 5.625rem);
+      background: linear-gradient(to bottom, white 2%, rgba(255, 255, 255, 0.1) 100%);
+      transform: translate3d(0, 0, 5.625rem);
     }
     .ng-data-picker .picker-handle-layer .picker-middle {
       height: 2rem;
     }
     .ng-data-picker .picker-handle-layer .picker-bottom {
       border-top: 0.55px solid rgba(74, 73, 89, 0.5);
-      // background: linear-gradient(to top, black 1%, rgba(0, 0, 0, 0.01) 100%);
-      // transform: translate3d(0, 0, 5.625rem);
+      background: linear-gradient(to top, white 2%, rgba(255, 255, 255, 0.1) 100%);
+      transform: translate3d(0, 0, 5.625rem);
     }
 
     /* flex system */
