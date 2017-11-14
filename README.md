@@ -31,8 +31,8 @@ TODO
 
 ### Quick look
 
-```javascript
-// import and use in your app.module
+#### app.module.ts
+```typescript
 import { DataPickerComponent } from 'ng-data-picker'
 
 @NgModule({
@@ -42,7 +42,26 @@ import { DataPickerComponent } from 'ng-data-picker'
   ]
   ...
 })
-// in your template
+```
+
+#### app.component.ts
+```typescript
+@Component({ ... })
+export class AppComponent {
+  data = [
+    {
+      list: ['1', '2', '3', '1', '2', '3', '1', '2', '3']
+    }
+  ]
+
+  change ({ gIndex, iIndex }) {
+    console.log(gIndex, iIndex)
+  }
+}
+```
+
+#### app.component.html
+```typescript
 <ng-data-picker [data]="data" (change)="change($event)"></ng-data-picker>
 ```
 
@@ -81,6 +100,8 @@ npm run prepare # build for third party
 ## Examples
 
 > See branch gh-pages.
+
+TODO
 
 ## Any problem?
 
