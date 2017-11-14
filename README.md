@@ -1,5 +1,5 @@
 # ng-data-picker  <sup>[![Version Badge](http://versionbadg.es/hiyali/ng-data-picker.svg)](https://npmjs.com/package/ng-data-picker)</sup>
-🏄🏾  A Data Picker for Angular
+🏄🏾  A Data Picker for Angular 4+
 ⚠️  You can use this now, but like readme & usage docs & etc not done yet ⚠️
 
 [![npm package](https://img.shields.io/npm/v/ng-data-picker.svg)](https://npmjs.com/package/ng-data-picker)
@@ -12,7 +12,7 @@
 
 > Let's more easily select some data on the touch screen device, such as time / city / gender / seat number / product / ...
 
-## Take a look
+## 🤠 Take a look
 
 ![Screen shot](https://raw.githubusercontent.com/hiyali/vue-smooth-picker/gh-pages/assets/smooth-picker-screenshot.png "screenshot")
 
@@ -20,7 +20,7 @@
 
 TODO
 
-## Install
+## 🌲 Install
 
 ```shell
 yarn add ng-data-picker
@@ -30,11 +30,11 @@ or
 npm i -S ng-data-picker
 ```
 
-## Usage
+## ✌️ Usage
 
 TODO
 
-### Quick look
+### 👁 Quick look
 
 #### app.module.ts
 ```typescript
@@ -70,7 +70,7 @@ export class AppComponent {
 <ng-data-picker [data]="data" (change)="change($event)"></ng-data-picker>
 ```
 
-## Props
+## ⚙️ Props
 
 | name                       | type       |  default      | explain                          |
 | :------------------------- | :--------- | :------------ | :------------------------------- |
@@ -86,7 +86,7 @@ export class AppComponent {
 | `data[i].divider`          | `Boolean`  | false         | If it is true, then `onClick` `list` `currentIndex` will not be used |
 | `data[i].text`             | `String`   | -             | Just use this text when `divider` is true |
 
-## Instance methods
+## 🔨 Instance methods
 
 | name                       | type       | explain                          |
 | :------------------------- | :--------- | :------------------------------- |
@@ -94,7 +94,7 @@ export class AppComponent {
 | `getCurrentIndexList`      | `Function` => [] | Return a `Array` of the groups current index list (has divider current index, and it is default to `0`) |
 | `getGroupsRectList`        | `Function` => void | Get some info for gesture, you can call this function when the component displayed if the component is hidden when it's initialization |
 
-## Development
+## 📝 Development
 
 ```shell
 npm start # development
@@ -102,13 +102,13 @@ npm run build:prod # build for production
 npm run prepare # build for third party
 ```
 
-## Examples
+## 💕 Examples
 
 > See branch gh-pages.
 
 TODO
 
-## Any problem?
+## 🆘 Any problem?
 
 > Please let me know.
 * [Open a new issue for this repo](https://github.com/hiyali/ng-data-picker/issues)
@@ -118,7 +118,7 @@ TODO
 
 🌚 [A github star ⍟](https://github.com/hiyali/ng-data-picker)
 
-## License
+## ❗️ License
 
 MIT
 
