@@ -25,6 +25,10 @@ TODO
 ```shell
 yarn add ng-data-picker
 ```
+or
+```shell
+npm i -S ng-data-picker
+```
 
 ## Usage
 
