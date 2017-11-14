@@ -1,5 +1,6 @@
 # ng-data-picker  <sup>[![Version Badge](http://versionbadg.es/hiyali/ng-data-picker.svg)](https://npmjs.com/package/ng-data-picker)</sup>
-🏄🏼 A Data Picker for Angular 4
+🏄🏾‍♀️ A Data Picker for Angular
+⚠️  You can use this now, but like readme & usage docs & etc not done yet ⚠️
 
 [![npm package](https://img.shields.io/npm/v/ng-data-picker.svg)](https://npmjs.com/package/ng-data-picker)
 [![travis build](https://img.shields.io/travis/hiyali/ng-data-picker/master.svg)](https://travis-ci.org/hiyali/ng-data-picker)
