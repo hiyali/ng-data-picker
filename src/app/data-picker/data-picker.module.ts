@@ -11,3 +11,5 @@ import { DataPickerComponent } from './data-picker/data-picker.component';
   exports: [DataPickerComponent]
 })
 export class DataPickerModule { }
+
+export { DataPickerComponent }

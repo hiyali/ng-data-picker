@@ -1,6 +1,6 @@
 import {
-  OnInit, AfterViewInit, Inject,
-  Component, Input, ElementRef, ViewChild, ViewChildren
+  OnInit, AfterViewInit, Inject, Component,
+  Input, Output, EventEmitter, ElementRef, ViewChild, ViewChildren
 } from '@angular/core'
 
 import { PickerData } from './data-picker.models'
@@ -9,7 +9,7 @@ import { PickerData } from './data-picker.models'
   selector: 'ng-data-picker',
   // templateUrl: './data-picker.component.html',
   template: `
-    <div class="ng-data-picker flex-box" [ngClass]="theme">
+    <div class="ng-data-picker flex-box">
 
       <!-- picker-group-layer -->
       <div #pickerGroupLayer *ngFor="let group of data; let gIndex = index"
@@ -149,6 +149,12 @@ import { PickerData } from './data-picker.models'
   `]
 })
 export class DataPickerComponent implements OnInit, AfterViewInit {
+  @ViewChildren('pickerGroupLayer') pickerGroupLayer
+  @ViewChild('pickerHandleLayer') pickerHandleLayer
+
+  @Input() data: PickerData[] = []
+  @Output() change: EventEmitter<any> = new EventEmitter<any>()
+
   currentIndexList: number[]
   lastCurrentIndexList: number[]
   groupsRectList: any[]
@@ -162,18 +168,6 @@ export class DataPickerComponent implements OnInit, AfterViewInit {
     startPageY: null
   }
   itemPerDegree = 23
-
-  @ViewChildren('pickerGroupLayer')
-  pickerGroupLayer
-  @ViewChild('pickerHandleLayer')
-  pickerHandleLayer
-
-  @Input()
-  theme: String
-  @Input()
-  data: PickerData[] = []
-  @Input()
-  change: Function = () => {}
 
   constructor(@Inject(ElementRef) elementRef: ElementRef) {
     // console.log('picker dom', elementRef.nativeElement)
@@ -375,7 +369,7 @@ export class DataPickerComponent implements OnInit, AfterViewInit {
         movedIndex = Math.round(movedIndex)
         this.currentIndexList[gIndex] = movedIndex
         if (movedIndex !== this.lastCurrentIndexList[gIndex]) {
-          this.change(gIndex, movedIndex)
+          this.change.emit({ gIndex, iIndex: movedIndex })
         }
         this.lastCurrentIndexList = [].concat(this.currentIndexList)
       }

@@ -4,8 +4,7 @@
 [![npm package](https://img.shields.io/npm/v/ng-data-picker.svg)](https://npmjs.com/package/ng-data-picker)
 [![travis build](https://img.shields.io/travis/hiyali/ng-data-picker/master.svg)](https://travis-ci.org/hiyali/ng-data-picker)
 [![NPM downloads](http://img.shields.io/npm/dt/ng-data-picker.svg)](https://npmjs.org/package/ng-data-picker)
-![JS gzip size](http://img.badgesize.io/hiyali/ng-data-picker/gh-pages/dist/smooth-picker.js.svg?compression=gzip&label=gzip:%20JS)
-![CSS gzip size](http://img.badgesize.io/hiyali/ng-data-picker/gh-pages/dist/css/style.css.svg?compression=gzip&label=gzip:%20CSS)
+![gzip size](http://img.badgesize.io/hiyali/ng-data-picker/gh-pages/lib/data-picker.module.js.svg?compression=gzip&label=gzip size)
 [![CircleCI](https://circleci.com/gh/hiyali/ng-data-picker/tree/master.svg?style=shield)](https://circleci.com/gh/hiyali/ng-data-picker/tree/master)
 
 [![NPM Description](https://nodei.co/npm/ng-data-picker.png?downloads=true&stars=true)](https://npmjs.org/package/ng-data-picker)
@@ -14,9 +13,11 @@
 
 ## Take a look
 
-![Screen shot](https://raw.githubusercontent.com/hiyali/ng-data-picker/gh-pages/assets/smooth-picker-screenshot.png "screenshot")
+![Screen shot](https://raw.githubusercontent.com/hiyali/vue-smooth-picker/gh-pages/assets/smooth-picker-screenshot.png "screenshot")
 
-![Screen record](https://raw.githubusercontent.com/hiyali/ng-data-picker/gh-pages/assets/smooth-picker-screen-record.gif "screen record")
+![Screen record](https://raw.githubusercontent.com/hiyali/vue-smooth-picker/gh-pages/assets/smooth-picker-screen-record.gif "screen record")
+
+TODO
 
 ## Install
 
@@ -42,37 +43,39 @@ import { DataPickerComponent } from 'ng-data-picker'
   ...
 })
 // in your template
-<ng-data-picker [data]="data" [change]="change" />
+<ng-data-picker [data]="data" (change)="change($event)"></ng-data-picker>
 ```
 
-## props
+## Props
 
 | name                       | type       |  default      | explain                          |
 | :------------------------- | :--------- | :------------ | :------------------------------- |
-| `change`                   | `Function` | (gIndex, iIndex) => {} | Callback after data current index changed, pass two arguments, group index `gIndex` and item index `iIndex` |
-| `data`                     | `Array`    | []            | SmoothPicker initial data        |
+| `change`                   | `Function` | ({ gIndex, iIndex }) => {} | Callback after which group's current index changed, pass two arguments, group index `gIndex` and item index `iIndex` |
+| `data`                     | `Array`    | []            | Picker initial data              |
 | `data[i].currentIndex`     | `Number`   | 0             | Current index of this group's list |
-| `data[i].weight`             | `Number`   | 1             | Group weights in parent width `1..12` |
+| `data[i].weight`           | `Number`   | 1             | Group weights in parent width `1..12` |
 | `data[i].list`             | `Array`    | -             | List of the group                |
 | `data[i].list[j]`          | `String` or `Object` | -   | Item in the list of group, use `value` key when it is a object item |
-| `data[i].onClick`          | `Function` | -             | Click event on the middle layer of this group, pass two arguments, this group index `gIndex` and selected index `iIndex` of this group |
-| `data[i].textAlign`        | `String`   | -             | `left` `center` or `right` in item block |
+| `data[i].onClick`          | `Function` | -             | Click event on the middle layer of this group, pass two arguments that group index `gIndex` and selected index `iIndex` of this group |
+| `data[i].textAlign`        | `String`   | -             | `start` | `center` | `end` | `justify` | `left` | `right` | `nowrap` | `wrap` |
 | `data[i].className`        | `String`   | -             | Your custom class name for this group |
-| `data[i].divider`          | `Boolean`  | false         | If it is true, then `onClick` `list` `currentIndex` will be not used |
-| `data[i].text`             | `String`   | -             | Just used when `divider` is true |
+| `data[i].divider`          | `Boolean`  | false         | If it is true, then `onClick` `list` `currentIndex` will not be used |
+| `data[i].text`             | `String`   | -             | Just use this text when `divider` is true |
 
 ## Instance methods
 
 | name                       | type       | explain                          |
 | :------------------------- | :--------- | :------------------------------- |
-| `setGroupData`             | `Function` | Dynamically set a group data with two arguments `(gIndex, gData)`, group index and group data (see props `data[i]`) |
-| `getCurrentIndexList`      | `Function` | Return a `Array` of the groups current index list (has divider current index, and it is default to `0`) |
+| `setGroupData`             | `Function` => void | Dynamically set a group data with two arguments `(gIndex, gData)`, group index and group data (see props `data[i]`) |
+| `getCurrentIndexList`      | `Function` => [] | Return a `Array` of the groups current index list (has divider current index, and it is default to `0`) |
+| `getGroupsRectList`        | `Function` => void | Get some info for gesture, you can call this function when the component displayed if the component is hidden when it's initialization |
 
 ## Development
 
 ```shell
-npm run dev # development
-npm run build # build
+npm start # development
+npm run build:prod # build for production
+npm run prepare # build for third party
 ```
 
 ## Examples
