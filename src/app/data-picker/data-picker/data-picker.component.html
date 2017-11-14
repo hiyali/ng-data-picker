@@ -1,10 +1,12 @@
-<div class="ng-data-picker flex-box" [ngClass]="theme">
+<div class="ng-data-picker flex-box">
 
   <!-- picker-group-layer -->
-  <div #pickerGroupLayer *ngFor="let group of data; let gIndex = index" class="picker-group" [ngClass]="getGroupClass(gIndex)">
+  <div #pickerGroupLayer *ngFor="let group of data; let gIndex = index"
+    class="picker-group" [ngClass]="getGroupClass(gIndex)">
 
     <div class="picker-list">
-      <div *ngIf="group.divider else ngIfElse" class="picker-item divider" [ngClass]="getItemClass(gIndex, iIndex, true)">
+      <div *ngIf="group.divider else ngIfElse"
+        class="picker-item divider" [ngClass]="getItemClass(gIndex, iIndex, true)">
         {{ group.text }}
       </div>
 
