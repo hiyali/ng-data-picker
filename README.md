@@ -4,7 +4,7 @@
 [![npm package](https://img.shields.io/npm/v/ng-data-picker.svg)](https://npmjs.com/package/ng-data-picker)
 [![travis build](https://img.shields.io/travis/hiyali/ng-data-picker/master.svg)](https://travis-ci.org/hiyali/ng-data-picker)
 [![NPM downloads](http://img.shields.io/npm/dt/ng-data-picker.svg)](https://npmjs.org/package/ng-data-picker)
-![gzip size](http://img.badgesize.io/hiyali/ng-data-picker/gh-pages/lib/data-picker.module.js.svg?compression=gzip&label=gzip size)
+![gzip size](http://img.badgesize.io/hiyali/ng-data-picker/gh-pages/lib/data-picker.module.js.svg?compression=gzip&label=gzip%20size)
 [![CircleCI](https://circleci.com/gh/hiyali/ng-data-picker/tree/master.svg?style=shield)](https://circleci.com/gh/hiyali/ng-data-picker/tree/master)
 
 [![NPM Description](https://nodei.co/npm/ng-data-picker.png?downloads=true&stars=true)](https://npmjs.org/package/ng-data-picker)
