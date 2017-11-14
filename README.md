@@ -114,9 +114,9 @@ TODO
 * [Open a new issue for this repo](https://github.com/hiyali/ng-data-picker/issues)
 * [Send a Email to: hiyali920@gmail.com](mailto:hiyali920@gmail.com)
 
-## Donate
+## 🌚  Donate
 
-🌚 [A github star ⍟](https://github.com/hiyali/ng-data-picker)
+[A github star ⍟](https://github.com/hiyali/ng-data-picker)
 
 ## ❗️ License
 
