@@ -86,7 +86,7 @@ export class AppComponent {
 | `data[i].list`             | `Array`    | -             | List of the group                |
 | `data[i].list[j]`          | `String` or `Object` | -   | Item in the list of group, use `value` key when it is a object item |
 | `data[i].onClick`          | `Function` | -             | Click event on the middle layer of this group, pass two arguments that group index `gIndex` and selected index `iIndex` of this group |
-| `data[i].textAlign`        | `String`   | -             | `start` | `center` | `end` | `justify` | `left` | `right` | `nowrap` | `wrap` |
+| `data[i].textAlign`        | `String`   | -             | `start` `center` `end` `justify` `left` `right` `nowrap` `wrap` |
 | `data[i].className`        | `String`   | -             | Your custom class name for this group |
 | `data[i].divider`          | `Boolean`  | false         | If it is true, then `onClick` `list` `currentIndex` will not be used |
 | `data[i].text`             | `String`   | -             | Just use this text when `divider` is true |
