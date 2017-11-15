@@ -1,24 +1,31 @@
 # ng-data-picker  <sup>[![Version Badge](http://versionbadg.es/hiyali/ng-data-picker.svg)](https://npmjs.com/package/ng-data-picker)</sup>
 🏄🏾  A Data Picker for Angular 4+
-⚠️  You can use this now, but like readme & usage docs & etc not done yet ⚠️
 
 [![npm package](https://img.shields.io/npm/v/ng-data-picker.svg)](https://npmjs.com/package/ng-data-picker)
 [![travis build](https://img.shields.io/travis/hiyali/ng-data-picker/master.svg)](https://travis-ci.org/hiyali/ng-data-picker)
 [![NPM downloads](http://img.shields.io/npm/dt/ng-data-picker.svg)](https://npmjs.org/package/ng-data-picker)
-![gzip size](http://img.badgesize.io/hiyali/ng-data-picker/gh-pages/lib/data-picker.module.js.svg?compression=gzip&label=gzip%20size)
+![gzip size](http://img.badgesize.io/hiyali/ng-data-picker/gh-pages/lib/data-picker/data-picker.component.js.svg?compression=gzip&label=gzip%20size)
 [![CircleCI](https://circleci.com/gh/hiyali/ng-data-picker/tree/master.svg?style=shield)](https://circleci.com/gh/hiyali/ng-data-picker/tree/master)
 
 [![NPM Description](https://nodei.co/npm/ng-data-picker.png?downloads=true&stars=true)](https://npmjs.org/package/ng-data-picker)
 
 > Let's more easily select some data on the touch screen device, such as time / city / gender / seat number / product / ...
 
+## 💕 Examples
+
+> See branch gh-pages for all code of extant examples.
+
 ## 🤠 Take a look
+
+[Simple demo](https://hiyali.github.io/ng-data-picker/docs/)
+
+other demo coming soon...
+
+⚠️ These screen shots are a temporary used from vue version of this picker. will be updated soon.
 
 ![Screen shot](https://raw.githubusercontent.com/hiyali/vue-smooth-picker/gh-pages/assets/smooth-picker-screenshot.png "screenshot")
 
 ![Screen record](https://raw.githubusercontent.com/hiyali/vue-smooth-picker/gh-pages/assets/smooth-picker-screen-record.gif "screen record")
-
-TODO
 
 ## 🌲 Install
 
@@ -31,8 +38,6 @@ npm i -S ng-data-picker
 ```
 
 ## ✌️ Usage
-
-TODO
 
 ### 👁 Quick look
 
@@ -101,12 +106,6 @@ npm start # development
 npm run build:prod # build for production
 npm run prepare # build for third party
 ```
-
-## 💕 Examples
-
-> See branch gh-pages.
-
-TODO
 
 ## 🆘 Any problem?
 
