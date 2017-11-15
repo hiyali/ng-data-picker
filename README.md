@@ -21,7 +21,7 @@
 
 other demo coming soon...
 
-⚠️ These screen shots is a temporary used from vue version of this picker. will be changed soon.
+⚠️ These screen shots are a temporary used from vue version of this picker. will be updated soon.
 
 ![Screen shot](https://raw.githubusercontent.com/hiyali/vue-smooth-picker/gh-pages/assets/smooth-picker-screenshot.png "screenshot")
 
