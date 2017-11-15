@@ -18,5 +18,8 @@
   },
   "include": [
     "src/app/data-picker"
+  ],
+  "exclude": [
+    "lib"
   ]
 }

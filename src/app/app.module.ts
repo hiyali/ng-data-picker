@@ -2,15 +2,15 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
-import { DataPickerModule } from './data-picker/data-picker.module';
+import { DataPickerComponent } from 'ng-data-picker';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    DataPickerComponent
   ],
   imports: [
-    BrowserModule,
-    DataPickerModule
+    BrowserModule
   ],
   providers: [],
   bootstrap: [AppComponent]

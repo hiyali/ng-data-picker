@@ -6,8 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
-
   data = [
     {
       list: ['1', '2', '3', '4', '5', '6', '7', '8', '9'],
@@ -15,7 +13,7 @@ export class AppComponent {
     }
   ]
 
-  change (gIndex, iIndex) {
+  change ({ gIndex, iIndex }) {
     console.log(gIndex, iIndex)
   }
 }

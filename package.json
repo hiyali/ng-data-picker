@@ -1,13 +1,13 @@
 {
-  "name": "ng-data-picker",
+  "name": "ng-data-picker-example",
   "author": "Salam Hiyali",
   "version": "0.0.4",
-  "description": "A angular 4 data picker that like iOS native datetime picker",
+  "description": "A data picker that like iOS native datetime picker based on angular 4+",
   "license": "MIT",
   "main": "lib/data-picker.module",
   "scripts": {
-    "build": "ng build",
-    "build:prod": "ng build -prod --aot=false",
+    "build": "ng build -op ./docs",
+    "build:prod": "ng build -prod --aot=false -op ./docs",
     "e2e": "ng e2e",
     "lint": "ng lint",
     "ng": "ng",
@@ -21,7 +21,8 @@
     "LICENSE"
   ],
   "dependencies": {
-    "@angular/core": "^4.2.4"
+    "@angular/core": "^4.2.4",
+    "ng-data-picker": "^0.0.4"
   },
   "devDependencies": {
     "@angular/animations": "^4.2.4",
