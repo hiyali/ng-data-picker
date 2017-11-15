@@ -95,9 +95,9 @@ export class AppComponent {
 
 | name                       | type       | explain                          |
 | :------------------------- | :--------- | :------------------------------- |
-| `setGroupData`             | `Function` => void | Dynamically set a group data with two arguments `(gIndex, gData)`, group index and group data (see props `data[i]`) |
-| `getCurrentIndexList`      | `Function` => [] | Return a `Array` of the groups current index list (has divider current index, and it is default to `0`) |
-| `getGroupsRectList`        | `Function` => void | Get some info for gesture, you can call this function when the component displayed if the component is hidden when it's initialization |
+| `setGroupData`             | `Function` (gIndex, gData)=>void | Dynamically set a group data with two arguments `(gIndex, gData)`, group index and group data (see props `data[i]`) |
+| `getCurrentIndexList`      | `Function` ()=>[] | Return a `Array` of the groups current index list (has divider current index, and it is default to `0`) |
+| `getGroupsRectList`        | `Function` ()=>void | Get some info for gesture, you can call this function when the component displayed if the component is hidden when it's initialization |
 
 ## 📝 Development
 
