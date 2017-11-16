@@ -23,7 +23,7 @@ other demo coming soon...
 
 ⚠️ These screen shots are a temporary used from vue version of this picker. will be updated soon.
 
-![Screen shot](https://raw.githubusercontent.com/hiyali/vue-smooth-picker/gh-pages/assets/smooth-picker-screenshot.png "screenshot")
+![Screen shot](https://raw.githubusercontent.com/hiyali/ng-data-picker/gh-pages/assets/example-screenshot.png "screenshot")
 
 ![Screen record](https://raw.githubusercontent.com/hiyali/vue-smooth-picker/gh-pages/assets/smooth-picker-screen-record.gif "screen record")
 
