@@ -99,51 +99,51 @@ import { PickerData } from './data-picker.models'
     }
 
     /* flex system */
-    .ng-data-picker .flex-box {
+    .flex-box {
         display: flex;
     }
-    .ng-data-picker .flex-box.dir-column {
+    .flex-box.dir-column {
       flex-direction: column;
     }
-    .ng-data-picker .flex-box.dir-row {
+    .flex-box.dir-row {
       flex-direction: row;
     }
 
     /* flex system - for items */
-    .ng-data-picker .flex-box .weight-1 {
+    .flex-box .weight-1 {
       flex: 1;
     }
-    .ng-data-picker .flex-box .weight-2 {
+    .flex-box .weight-2 {
       flex: 2;
     }
-    .ng-data-picker .flex-box .weight-3 {
+    .flex-box .weight-3 {
       flex: 3;
     }
-    .ng-data-picker .flex-box .weight-4 {
+    .flex-box .weight-4 {
       flex: 4;
     }
-    .ng-data-picker .flex-box .weight-5 {
+    .flex-box .weight-5 {
       flex: 5;
     }
-    .ng-data-picker .flex-box .weight-6 {
+    .flex-box .weight-6 {
       flex: 6;
     }
-    .ng-data-picker .flex-box .weight-7 {
+    .flex-box .weight-7 {
       flex: 7;
     }
-    .ng-data-picker .flex-box .weight-8 {
+    .flex-box .weight-8 {
       flex: 8;
     }
-    .ng-data-picker .flex-box .weight-9 {
+    .flex-box .weight-9 {
       flex: 9;
     }
-    .ng-data-picker .flex-box .weight-10 {
+    .flex-box .weight-10 {
       flex: 10;
     }
-    .ng-data-picker .flex-box .weight-11 {
+    .flex-box .weight-11 {
       flex: 11;
     }
-    .ng-data-picker .flex-box .weight-12 {
+    .flex-box .weight-12 {
       flex: 12;
     }
   `]

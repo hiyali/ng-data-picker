@@ -17,9 +17,7 @@
 
 ## 🤠 Take a look
 
-[Simple demo](https://hiyali.github.io/ng-data-picker/docs/)
-
-other demo coming soon...
+[A few demo](https://hiyali.github.io/ng-data-picker/docs/)
 
 ⚠️ These screen shots are a temporary used from vue version of this picker. will be updated soon.
 
