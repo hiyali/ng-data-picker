@@ -77,7 +77,7 @@ export class AppComponent {
 
 | name                       | type       |  default      | explain                          |
 | :------------------------- | :--------- | :------------ | :------------------------------- |
-| `change`                   | `Function` | ({ gIndex, iIndex }) => {} | Callback after which group's current index changed, pass two arguments, group index `gIndex` and item index `iIndex` |
+| `change`                   | `Function` | ({gIndex,iIndex})=>{} | Callback after which group's current index changed, pass two arguments, group index `gIndex` and item index `iIndex` |
 | `data`                     | `Array`    | []            | Picker initial data              |
 | `data[i].currentIndex`     | `Number`   | 0             | Current index of this group's list |
 | `data[i].weight`           | `Number`   | 1             | Group weights in parent width `1..12` |
