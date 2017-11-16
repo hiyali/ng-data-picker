@@ -58,7 +58,7 @@ import { DataPickerComponent } from 'ng-data-picker'
 export class AppComponent {
   data = [
     {
-      list: ['1', '2', '3', '1', '2', '3', '1', '2', '3']
+      list: ['sun', 'earth', 'moon']
     }
   ]
 
