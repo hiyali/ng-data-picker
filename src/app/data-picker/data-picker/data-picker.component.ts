@@ -43,7 +43,7 @@ export { PickerDataModel }
     .ng-data-picker {
       height: 10rem;
       position: relative;
-      background-color: white; // now
+      background-color: white;
       overflow: hidden;
     }
     .ng-data-picker.black {
