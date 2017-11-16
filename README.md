@@ -15,9 +15,9 @@
 
 > See branch gh-pages for all code of extant examples.
 
-## 🤠 Take a look
+Link: [demo](https://hiyali.github.io/ng-data-picker/docs/)
 
-[A few demo](https://hiyali.github.io/ng-data-picker/docs/)
+## 🤠 Take a look
 
 ⚠️ These screen shots are a temporary used from vue version of this picker. will be updated soon.
 
