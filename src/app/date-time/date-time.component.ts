@@ -1,5 +1,5 @@
 import { Component, ViewChild, OnInit } from '@angular/core';
-import { DataPickerComponent } from 'ng-data-picker';
+import { DataPickerComponent, PickerDataModel } from 'ng-data-picker';
 
 @Component({
   selector: 'app-date-time',
@@ -12,7 +12,7 @@ export class DateTimeComponent implements OnInit {
   hidePicker = true
   nowYear: number
 
-  data: Array<any> = [
+  data: Array<PickerDataModel> = [
     {
       currentIndex: Math.round((this.nowYear - 1991) / 2),
       weight: 3,
