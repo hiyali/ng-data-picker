@@ -7,7 +7,7 @@ import { ProductComponent } from './product/product.component';
 import { DateTimeComponent } from './date-time/date-time.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: '/simple-use', pathMatch: 'full' },
+  { path: '', redirectTo: '/gender', pathMatch: 'full' },
   { path: 'gender', component: GenderComponent },
   { path: 'product', component: ProductComponent },
   { path: 'date-time', component: DateTimeComponent }

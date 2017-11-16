@@ -22,7 +22,9 @@ THE SOFTWARE.
 
 @angular/core@4.4.6 MIT
 
-ng-data-picker@0.0.4 MIT
+@angular/router@4.4.6 MIT
+
+ng-data-picker@0.1.1 MIT
 The MIT License (MIT)
 
 Copyright (c) 2017-present, Salam Hiyali <hiyali920@gmail.com>

@@ -9,7 +9,7 @@ import { DataPickerComponent } from 'ng-data-picker';
 export class DateTimeComponent implements OnInit {
   @ViewChild('dataPicker') dataPicker: DataPickerComponent
 
-  hidePicker: boolean = true
+  hidePicker = true
   nowYear: number
 
   data: Array<any> = [
@@ -129,7 +129,7 @@ export class DateTimeComponent implements OnInit {
   }
 
   alertOnClick (message: string, gIndex: number, iIndex: number) {
-    alert(message +' '+ this.data[gIndex].list[iIndex])
+    alert(message + ' ' + this.data[gIndex].list[iIndex])
   }
 
   clickOnYear (gIndex, iIndex) {
