@@ -15,11 +15,5 @@
       "es2017",
       "dom"
     ]
-  },
-  "include": [
-    "src/app/data-picker"
-  ],
-  "exclude": [
-    "lib"
-  ]
+  }
 }

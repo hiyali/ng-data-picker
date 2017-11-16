@@ -11,7 +11,7 @@
     "e2e": "ng e2e",
     "lint": "ng lint",
     "ng": "ng",
-    "prepare": "npm run lint & tsc",
+    "prepare": "npm run lint",
     "start": "ng serve",
     "test": "ng test"
   },

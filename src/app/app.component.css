@@ -1,0 +1,31 @@
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  height: 100%;
+}
+
+.header {
+  text-align: center;
+}
+.header h1 {
+  line-height: 50px;
+  margin: 0;
+}
+
+.nav {
+  line-height: 30px;
+}
+.nav a {
+  margin: 0 10px;
+}
+
+.main {
+  min-height: calc(100% - 260px);
+  padding: 40px 10px;
+}
+
+.footer {
+  text-align: center;
+  line-height: 30px;
+  padding: 20px 0;
+}

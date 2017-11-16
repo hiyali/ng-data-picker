@@ -1,10 +1,23 @@
-<div style="text-align:center">
-  <h1>
-    NgDataPicker demo
-  </h1>
-</div>
+<div class="container">
+  <header class="header">
+    <h1>
+      NgDataPicker demo
+    </h1>
 
-<div>
-  <ng-data-picker [data]="data" (change)="change($event)"></ng-data-picker>
+    <nav class="nav">
+      <a routerLink="/simple-use">Simple Use</a>
+      <a routerLink="/product">Product</a>
+      <a routerLink="/date-time">Date time</a>
+    </nav>
+  </header>
+
+  <main class="main">
+    <router-outlet></router-outlet>
+  </main>
+
+  <footer class="footer">
+    Salam Hiyali (c) 2017-preset<br>
+    hiyali920@gmail.com
+  </footer>
 </div>
 
