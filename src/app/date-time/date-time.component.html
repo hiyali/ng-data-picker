@@ -1,3 +1,20 @@
-<p>
-  date-time works!
-</p>
+<div class="content">
+  <p>
+    You can pick a date or click on the middle layer or confirm your choosen.
+  </p>
+
+  <br>When initialization the picker was hidden, now it did not work?
+  <br>Don't worry, you can correct it
+  <button class="button" type="button" (click)="toggle()">
+    {{ hidePicker ? 'show' : 'hide' }} picker
+  </button>
+  by `getGroupsRectList` function (for this example you can hide & show picker once)
+  <br>
+
+  <div>
+    <ng-data-picker #dataPicker [hidden]="hidePicker"
+      [data]="data" (change)="dataChange($event)">
+    </ng-data-picker>
+    <button class="button" type="button" (click)="confirm()">Confirm</button>
+  </div>
+</div>

@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
 import { DataPickerComponent } from 'ng-data-picker';
 
 @Component({
@@ -6,7 +6,7 @@ import { DataPickerComponent } from 'ng-data-picker';
   templateUrl: './product.component.html',
   styleUrls: ['./product.component.css']
 })
-export class ProductComponent implements OnInit {
+export class ProductComponent {
   @ViewChild('dataPicker') dataPicker: DataPickerComponent
 
   data: Array<any> = [
@@ -39,12 +39,12 @@ export class ProductComponent implements OnInit {
     }
   ]
 
-  constructor() {}
+  constructor () {
+    /*noop*/
+  }
 
-  ngOnInit() {}
-
-  dataChange (gIndex, iIndex) {
-    console.info('list', gIndex, iIndex)
+  dataChange ({ gIndex, iIndex }) {
+    console.log('list', gIndex, iIndex)
     if (gIndex === 0) {
       let currentIndex = 0
       let list = []

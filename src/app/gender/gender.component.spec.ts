@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { SimpleUseComponent } from './simple-use.component';
+import { GenderComponent } from './gender.component';
 
-describe('SimpleUseComponent', () => {
-  let component: SimpleUseComponent;
-  let fixture: ComponentFixture<SimpleUseComponent>;
+describe('GenderComponent', () => {
+  let component: GenderComponent;
+  let fixture: ComponentFixture<GenderComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ SimpleUseComponent ]
+      declarations: [ GenderComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(SimpleUseComponent);
+    fixture = TestBed.createComponent(GenderComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

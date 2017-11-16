@@ -1,10 +1,10 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgModule, NO_ERRORS_SCHEMA } from '@angular/core';
 import { DataPickerComponent } from 'ng-data-picker';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
-import { SimpleUseComponent } from './simple-use/simple-use.component';
+import { GenderComponent } from './gender/gender.component';
 import { ProductComponent } from './product/product.component';
 import { DateTimeComponent } from './date-time/date-time.component';
 
@@ -12,7 +12,8 @@ import { DateTimeComponent } from './date-time/date-time.component';
   declarations: [
     AppComponent,
     DataPickerComponent,
-    SimpleUseComponent,
+
+    GenderComponent,
     ProductComponent,
     DateTimeComponent
   ],
@@ -21,6 +22,9 @@ import { DateTimeComponent } from './date-time/date-time.component';
     AppRoutingModule
   ],
   providers: [],
+  schemas: [
+    NO_ERRORS_SCHEMA
+  ],
   bootstrap: [ AppComponent ]
 })
 export class AppModule { }

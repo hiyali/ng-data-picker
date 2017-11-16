@@ -8,19 +8,20 @@
   text-align: center;
 }
 .header h1 {
-  line-height: 50px;
-  margin: 0;
+  line-height: 80px;
 }
 
 .nav {
-  line-height: 30px;
+  line-height: 25px;
+  list-style: none;
 }
-.nav a {
+.nav .item {
+  display: inline-block;
   margin: 0 10px;
 }
 
 .main {
-  min-height: calc(100% - 260px);
+  min-height: calc(100% - 290px);
   padding: 40px 10px;
 }
 
