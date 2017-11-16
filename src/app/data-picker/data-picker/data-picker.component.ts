@@ -3,7 +3,8 @@ import {
   Input, Output, EventEmitter, ElementRef, ViewChild, ViewChildren
 } from '@angular/core'
 
-import { PickerData } from './data-picker.models'
+import { PickerDataModel } from './data-picker.models'
+export { PickerDataModel }
 
 @Component({
   selector: 'ng-data-picker',
@@ -42,7 +43,7 @@ import { PickerData } from './data-picker.models'
     .ng-data-picker {
       height: 10rem;
       position: relative;
-      background-color: transparent;
+      background-color: white; // now
       overflow: hidden;
     }
     .ng-data-picker.black {
@@ -152,7 +153,7 @@ export class DataPickerComponent implements OnInit, AfterViewInit {
   @ViewChildren('pickerGroupLayer') pickerGroupLayer
   @ViewChild('pickerHandleLayer') pickerHandleLayer
 
-  @Input() data: PickerData[] = []
+  @Input() data: PickerDataModel[] = []
   @Output() change: EventEmitter<any> = new EventEmitter<any>()
 
   currentIndexList: number[]

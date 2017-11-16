@@ -1,4 +1,4 @@
-export interface PickerData {
+export interface PickerDataModel {
   textAlign?: 'start' | 'center' | 'end' | 'justify' | 'left' | 'right' | 'nowrap' | 'wrap'
   weight?: 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12
   className?: string
@@ -12,7 +12,7 @@ export interface PickerData {
 }
 
 /*
-export const initialPickerData: PickerData =  {
+export const initialPickerData: PickerDataModel =  {
   textAlign: 'center',
   weight: 1,
   className: '',
