@@ -1,4 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
+import {HashLocationStrategy, Location, LocationStrategy} from '@angular/common';
 import { NgModule, NO_ERRORS_SCHEMA } from '@angular/core';
 import { DataPickerComponent } from 'ng-data-picker';
 
@@ -21,7 +22,12 @@ import { DateTimeComponent } from './date-time/date-time.component';
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [
+    Location,
+    {
+      provide: LocationStrategy, useClass: HashLocationStrategy
+    }
+  ],
   schemas: [
     NO_ERRORS_SCHEMA
   ],

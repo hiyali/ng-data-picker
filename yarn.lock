@@ -3384,9 +3384,9 @@ negotiator@0.6.1:
   version "0.6.1"
   resolved "https://registry.yarnpkg.com/negotiator/-/negotiator-0.6.1.tgz#2b327184e8992101177b28563fb5e7102acd0ca9"
 
-ng-data-picker@^0.1.2:
-  version "0.1.2"
-  resolved "https://registry.yarnpkg.com/ng-data-picker/-/ng-data-picker-0.1.2.tgz#b24e13b63934bb0e86d6e36faf1d166fe57d6f31"
+ng-data-picker@^0.1.3:
+  version "0.1.3"
+  resolved "https://registry.yarnpkg.com/ng-data-picker/-/ng-data-picker-0.1.3.tgz#3a942590b496fb8f11c63cc726c4ec0086c7f7c9"
   dependencies:
     "@angular/core" "^4.2.4"
 
