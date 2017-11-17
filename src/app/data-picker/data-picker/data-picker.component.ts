@@ -1,5 +1,5 @@
 import {
-  OnInit, AfterViewInit, Inject, Component,
+  OnInit, AfterViewInit, OnDestroy, Inject, Component,
   Input, Output, EventEmitter, ElementRef, ViewChild, ViewChildren
 } from '@angular/core'
 
@@ -149,7 +149,7 @@ export { PickerDataModel }
     }
   `]
 })
-export class DataPickerComponent implements OnInit, AfterViewInit {
+export class DataPickerComponent implements OnInit, AfterViewInit, OnDestroy {
   @ViewChildren('pickerGroupLayer') pickerGroupLayer
   @ViewChild('pickerHandleLayer') pickerHandleLayer
 
@@ -169,6 +169,7 @@ export class DataPickerComponent implements OnInit, AfterViewInit {
     startPageY: null
   }
   itemPerDegree = 23
+  safeDoTimeoutId: any = null
 
   constructor(@Inject(ElementRef) elementRef: ElementRef) {
     // console.log('picker dom', elementRef.nativeElement)
@@ -179,11 +180,16 @@ export class DataPickerComponent implements OnInit, AfterViewInit {
     this.lastCurrentIndexList = [].concat(this.currentIndexList)
 
     this.groupsRectList = new Array(this.data.length)
-    this.eventsRegister()
   }
 
   ngAfterViewInit() {
+    this.eventsRegister()
     this.getGroupsRectList()
+    window.addEventListener('resize', this.safeGetRectsBindEvents.bind(this))
+  }
+
+  ngOnDestroy () {
+    window.removeEventListener('resize', this.safeGetRectsBindEvents.bind(this))
   }
 
   setGroupData (gIndex, groupData) {
@@ -208,6 +214,15 @@ export class DataPickerComponent implements OnInit, AfterViewInit {
       }
       return 0
     })
+  }
+
+  safeGetRectsBindEvents () {
+    if (this.safeDoTimeoutId) {
+      clearTimeout(this.safeDoTimeoutId)
+    }
+    this.safeDoTimeoutId = setTimeout(() => {
+      this.getGroupsRectList()
+    }, 200)
   }
 
   getGroupsRectList () {
