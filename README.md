@@ -17,7 +17,7 @@
 
 ## 🤠 Take a look
 
-[Simple demo](https://hiyali.github.io/ng-data-picker/docs/)
+[demo](https://hiyali.github.io/ng-data-picker/docs/)
 
 other demo coming soon...
 
