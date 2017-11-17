@@ -19,7 +19,7 @@ Link: [demo](https://hiyali.github.io/ng-data-picker/docs/)
 
 ## 🤠 Take a look
 
-![Screen shot](https://raw.githubusercontent.com/hiyali/ng-data-picker/gh-pages/src/assets/example-screenshot.png "screenshot")
+![Screen shot](https://raw.githubusercontent.com/hiyali/ng-data-picker/gh-pages/assets/example-screenshot.png "screenshot")
 
 ⚠️ Below gif is a temporary used from [vue version](https://github.com/hiyali/vue-smooth-picker) of this picker. will be updated soon.
 
