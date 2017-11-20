@@ -180,12 +180,13 @@ export class DataPickerComponent implements OnInit, AfterViewInit, OnDestroy {
     this.lastCurrentIndexList = [].concat(this.currentIndexList)
 
     this.groupsRectList = new Array(this.data.length)
+
+    this.eventsRegister()
+    window.addEventListener('resize', this.safeGetRectsBindEvents.bind(this))
   }
 
   ngAfterViewInit() {
-    this.eventsRegister()
     this.getGroupsRectList()
-    window.addEventListener('resize', this.safeGetRectsBindEvents.bind(this))
   }
 
   ngOnDestroy () {

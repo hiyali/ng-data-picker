@@ -13,9 +13,13 @@
 
 ## 💕 Examples
 
-> See branch gh-pages for all code of extant examples.
+> See branch [gh-pages](https://github.com/hiyali/ng-data-picker/tree/gh-pages) for all code of extant examples and environment.
 
-Link: [demo](https://hiyali.github.io/ng-data-picker/docs/)
+| Demo      | Level      | Code      |
+| :-------- | :--------- | :-------- |
+| [gender](https://hiyali.github.io/ng-data-picker/docs/#/gender) | 1          | [gender](https://github.com/hiyali/ng-data-picker/tree/gh-pages/src/app/gender) |
+| [product](https://hiyali.github.io/ng-data-picker/docs/#/product) | 2          | [product](https://github.com/hiyali/ng-data-picker/tree/gh-pages/src/app/product) |
+| [date-time](https://hiyali.github.io/ng-data-picker/docs/#/date-time) | 3         | [date-time](https://github.com/hiyali/ng-data-picker/tree/gh-pages/src/app/date-time) |
 
 ## 🤠 Take a look
 
@@ -75,7 +79,7 @@ export class AppComponent {
 
 ## ⚙️ Props
 
-| name                       | type       |  default      | explain                          |
+| name                       | type       | default       | explain                          |
 | :------------------------- | :--------- | :------------ | :------------------------------- |
 | `change`                   | `Function` | ({gIndex,iIndex})=>{} | Callback after which group's current index changed, pass two arguments, group index `gIndex` and item index `iIndex` |
 | `data`                     | `Array`    | []            | Picker initial data              |
