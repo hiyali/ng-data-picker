@@ -52,7 +52,6 @@ export class DateTimeComponent implements OnInit {
   }
 
   ngOnInit () {
-    console.log()
     setTimeout(() => {
       this.hidePicker = false
     }, 1000)
