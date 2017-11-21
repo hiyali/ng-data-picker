@@ -17,9 +17,9 @@
 
 | Demo      | Level      | Code      |
 | :-------- | :--------- | :-------- |
-| [gender](https://hiyali.github.io/ng-data-picker/docs/#/gender) | 1          | [gender](https://github.com/hiyali/ng-data-picker/tree/gh-pages/src/app/gender) |
-| [product](https://hiyali.github.io/ng-data-picker/docs/#/product) | 2          | [product](https://github.com/hiyali/ng-data-picker/tree/gh-pages/src/app/product) |
-| [date-time](https://hiyali.github.io/ng-data-picker/docs/#/date-time) | 3         | [date-time](https://github.com/hiyali/ng-data-picker/tree/gh-pages/src/app/date-time) |
+| [gender](https://hiyali.github.io/ng-data-picker/docs/#/gender) | ★         | [gender](https://github.com/hiyali/ng-data-picker/tree/gh-pages/src/app/gender) |
+| [product](https://hiyali.github.io/ng-data-picker/docs/#/product) | ★ ★       | [product](https://github.com/hiyali/ng-data-picker/tree/gh-pages/src/app/product) |
+| [date-time](https://hiyali.github.io/ng-data-picker/docs/#/date-time) | ★ ★ ★   | [date-time](https://github.com/hiyali/ng-data-picker/tree/gh-pages/src/app/date-time) |
 
 ## Take a look
 
