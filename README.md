@@ -11,7 +11,7 @@
 
 > Let's more easily select some data on the touch screen device, such as time / city / gender / seat number / product / ...
 
-## 💕 Examples
+## Examples
 
 > See branch [gh-pages](https://github.com/hiyali/ng-data-picker/tree/gh-pages) for all code of extant examples and environment.
 
@@ -21,7 +21,7 @@
 | [product](https://hiyali.github.io/ng-data-picker/docs/#/product) | 2          | [product](https://github.com/hiyali/ng-data-picker/tree/gh-pages/src/app/product) |
 | [date-time](https://hiyali.github.io/ng-data-picker/docs/#/date-time) | 3         | [date-time](https://github.com/hiyali/ng-data-picker/tree/gh-pages/src/app/date-time) |
 
-## 🤠 Take a look
+## Take a look
 
 ![Screen shot](https://raw.githubusercontent.com/hiyali/ng-data-picker/gh-pages/assets/example-screenshot.png "screenshot")
 
@@ -29,7 +29,7 @@
 
 ![Screen record](https://raw.githubusercontent.com/hiyali/vue-smooth-picker/gh-pages/assets/smooth-picker-screen-record.gif "screen record")
 
-## 🌲 Install
+## Install
 
 ```shell
 yarn add ng-data-picker
@@ -39,9 +39,9 @@ or
 npm i -S ng-data-picker
 ```
 
-## ✌️ Usage
+## Usage
 
-### 👁 Quick look
+### Quick look
 
 #### app.module.ts
 ```typescript
@@ -58,7 +58,6 @@ import { DataPickerComponent } from 'ng-data-picker'
 
 #### app.component.ts
 ```typescript
-@Component({ ... })
 export class AppComponent {
   data = [
     {
@@ -101,7 +100,7 @@ export class AppComponent {
 | `getCurrentIndexList`      | `Function` ()=>[] | Return a `Array` of the groups current index list (has divider current index, and it is default to `0`) |
 | `getGroupsRectList`        | `Function` ()=>void | Get some info for gesture, you can call this function when the component displayed if the component is hidden when it's initialization |
 
-## 📝 Development
+## Development
 
 ```shell
 npm start # development
@@ -109,7 +108,7 @@ npm run build:prod # build for production
 npm run prepare # build for third party
 ```
 
-## 🆘 Any problem?
+## Any problem?
 
 > Please let me know.
 * [Open a new issue for this repo](https://github.com/hiyali/ng-data-picker/issues)
@@ -119,7 +118,7 @@ npm run prepare # build for third party
 
 [A github star ⍟](https://github.com/hiyali/ng-data-picker)
 
-## ❗️ License
+## License
 
 MIT
 
