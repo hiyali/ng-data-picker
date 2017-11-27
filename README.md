@@ -72,7 +72,7 @@ export class AppComponent {
 ```
 
 #### app.component.html
-```typescript
+```html
 <ng-data-picker [data]="data" (change)="change($event)"></ng-data-picker>
 ```
 
