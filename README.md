@@ -114,9 +114,9 @@ npm run prepare # build for third party
 * [Open a new issue for this repo](https://github.com/hiyali/ng-data-picker/issues)
 * [Send a Email to: hiyali920@gmail.com](mailto:hiyali920@gmail.com)
 
-## 🌚  Donate
+## Is is useful?
 
-[A github star ⍟](https://github.com/hiyali/ng-data-picker)
+🌚  Donate [A github star ⍟](https://github.com/hiyali/ng-data-picker)
 
 ## License
 
