@@ -45,13 +45,17 @@ npm i -S ng-data-picker
 
 #### app.module.ts
 ```typescript
+import { NgModule, NO_ERRORS_SCHEMA } from '@angular/core'
 import { DataPickerComponent } from 'ng-data-picker'
 
 @NgModule({
   ...
   declarations: [
     DataPickerComponent
-  ]
+  ],
+  schemas: [
+    NO_ERRORS_SCHEMA // for third party component
+  ],
   ...
 })
 ```
