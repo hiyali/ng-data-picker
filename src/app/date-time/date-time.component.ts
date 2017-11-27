@@ -1,5 +1,5 @@
-import { Component, ViewChild, OnInit } from '@angular/core';
-import { DataPickerComponent, PickerDataModel } from 'ng-data-picker';
+import { Component, ViewChild, OnInit } from '@angular/core'
+import { DataPickerComponent, PickerDataModel } from 'ng-data-picker'
 
 @Component({
   selector: 'app-date-time',

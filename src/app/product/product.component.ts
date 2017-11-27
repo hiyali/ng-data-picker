@@ -1,5 +1,5 @@
-import { Component, ViewChild } from '@angular/core';
-import { DataPickerComponent } from 'ng-data-picker';
+import { Component, ViewChild } from '@angular/core'
+import { DataPickerComponent } from 'ng-data-picker'
 
 @Component({
   selector: 'app-product',
