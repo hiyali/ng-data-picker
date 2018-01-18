@@ -41,7 +41,7 @@ export { PickerDataModel }
   // styleUrls: ['./data-picker.component.scss']
   styles: [`
     .ng-data-picker {
-      height: 10rem;
+      height: 10em;
       position: relative;
       background-color: white;
       overflow: hidden;
@@ -52,9 +52,9 @@ export { PickerDataModel }
     .ng-data-picker .picker-group {
     }
     .ng-data-picker .picker-list {
-      height: 6.25rem;
+      height: 6.25em;
       position: relative;
-      top: 4rem; // half of picker height - half of item height
+      top: 4em; // half of picker height - half of item height
     }
     .ng-data-picker .picker-item {
       position: absolute;
@@ -68,9 +68,9 @@ export { PickerDataModel }
       text-align: center;
       will-change: transform;
       contain: strict;
-      height: 2rem;
+      height: 2em;
       line-height: 2;
-      font-size: 1rem;
+      font-size: 1em;
     }
     .ng-data-picker .selected-item {
     }
@@ -88,15 +88,15 @@ export { PickerDataModel }
     .ng-data-picker .picker-handle-layer .picker-top {
       border-bottom: 0.55px solid rgba(74, 73, 89, 0.5);
       background: linear-gradient(to bottom, white 2%, rgba(255, 255, 255, 0.1) 100%);
-      transform: translate3d(0, 0, 5.625rem);
+      transform: translate3d(0, 0, 5.625em);
     }
     .ng-data-picker .picker-handle-layer .picker-middle {
-      height: 2rem;
+      height: 2em;
     }
     .ng-data-picker .picker-handle-layer .picker-bottom {
       border-top: 0.55px solid rgba(74, 73, 89, 0.5);
       background: linear-gradient(to top, white 2%, rgba(255, 255, 255, 0.1) 100%);
-      transform: translate3d(0, 0, 5.625rem);
+      transform: translate3d(0, 0, 5.625em);
     }
 
     /* flex system */
@@ -427,7 +427,7 @@ export class DataPickerComponent implements OnInit, AfterViewInit, OnDestroy {
     const gapCount = this.currentIndexList[gIndex] - iIndex
     if (Math.abs(gapCount) < (90 / this.itemPerDegree)) {
       const rotateStyle = {
-        transform: 'rotateX(' + gapCount * this.itemPerDegree + 'deg) translate3d(0, 0, 5.625rem)',
+        transform: 'rotateX(' + gapCount * this.itemPerDegree + 'deg) translate3d(0, 0, 5.625em)',
         opacity: (1 - Math.abs(gapCount) / (90 / this.itemPerDegree)).toString()
       }
       if (!this.draggingInfo.isDragging) {
@@ -436,9 +436,9 @@ export class DataPickerComponent implements OnInit, AfterViewInit, OnDestroy {
       return rotateStyle
     }
     if (gapCount > 0) {
-      return { transform: 'rotateX(90deg) translate3d(0, 0, 5.625rem)' }
+      return { transform: 'rotateX(90deg) translate3d(0, 0, 5.625em)' }
     } else {
-      return { transform: 'rotateX(-90deg) translate3d(0, 0, 5.625rem)' }
+      return { transform: 'rotateX(-90deg) translate3d(0, 0, 5.625em)' }
     }
   }
 }
