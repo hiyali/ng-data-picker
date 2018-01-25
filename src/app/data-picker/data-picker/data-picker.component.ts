@@ -41,6 +41,7 @@ export { PickerDataModel }
   // styleUrls: ['./data-picker.component.scss']
   styles: [`
     .ng-data-picker {
+      font-size: 1rem;
       height: 10em;
       position: relative;
       background-color: white;
