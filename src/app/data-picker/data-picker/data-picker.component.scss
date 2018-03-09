@@ -1,11 +1,12 @@
 @function r($px) {
-  @return ($px / 16) * 1rem
+  @return ($px / 16) * 1em
 }
 
 $pickerHeight: 160;
 $middleLayerHeight: 32;
 
 .ng-data-picker {
+  font-size: 1rem;
   height: r($pickerHeight);
   position: relative;
   background-color: transparent;
@@ -35,7 +36,7 @@ $middleLayerHeight: 32;
     contain: strict;
     height: r($middleLayerHeight);
     line-height: 2;
-    font-size: 1rem;
+    font-size: 1em;
   }
   .selected-item {
 
@@ -52,7 +53,7 @@ $middleLayerHeight: 32;
     .picker-top {
       border-bottom: 0.55px solid #4a4959;
       background: linear-gradient(to bottom, white 2%, rgba(255, 255, 255, 0.1) 100%);
-      transform: translate3d(0, 0, 5.625rem);
+      transform: translate3d(0, 0, 5.625em);
     }
     .picker-middle {
       height: r($middleLayerHeight);
@@ -60,7 +61,7 @@ $middleLayerHeight: 32;
     .picker-bottom {
       border-top: 0.55px solid #4a4959;
       background: linear-gradient(to top, white 2%, rgba(255, 255, 255, 0.1) 100%);
-      transform: translate3d(0, 0, 5.625rem);
+      transform: translate3d(0, 0, 5.625em);
     }
   }
 
