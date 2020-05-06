@@ -1,3 +1,4 @@
+**No time for maintenance** - welcome to send a useful PR  :)
 # ng-data-picker  <sup>[![Version Badge](http://versionbadg.es/hiyali/ng-data-picker.svg)](https://npmjs.com/package/ng-data-picker)</sup>
 🏄🏾  A Data Picker for Angular 4+
 
